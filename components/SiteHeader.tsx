@@ -10,7 +10,7 @@ export default function SiteHeader() {
 
       <nav className="nav-links" aria-label="Primary navigation">
         <Link href="/#treatments">Treatments</Link>
-        <Link href="/#team">Our Team</Link>
+        <Link href="/#Story">Our Story</Link>
         <Link href="/#experience">Experience</Link>
         <Link href="/#contact">Contact</Link>
       </nav>

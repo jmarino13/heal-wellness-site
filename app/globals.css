@@ -3443,4 +3443,110 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
     height:550px;
   }
 
+}/* =========================================================
+   JUDE STORY
+========================================================= */
+
+.jude-story {
+  position: relative;
+  padding: 130px 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7vw;
+  align-items: center;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(166,106,74,.12),
+      transparent 30%
+    ),
+    #f1ece4;
+  overflow: hidden;
+}
+
+.jude-copy {
+  max-width: 650px;
+}
+
+.jude-copy h2 {
+  margin: 20px 0 35px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(3.5rem, 5vw, 5.8rem);
+  line-height: .95;
+  letter-spacing: -.05em;
+  color: #272522;
+}
+
+.jude-copy h2 span {
+  display:block;
+  color:#a66a4a;
+  font-style:italic;
+}
+
+.jude-copy > p:not(.section-kicker) {
+  font-size:1.05rem;
+  line-height:1.9;
+  color:#5d564e;
+  margin-bottom:22px;
+}
+
+.jude-copy blockquote {
+  margin:40px 0;
+  padding-left:28px;
+  border-left:1px solid #a66a4a;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.55rem;
+  line-height:1.5;
+  font-style:italic;
+  color:#76584a;
+}
+
+.jude-title {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-top:35px;
+}
+
+.jude-title strong {
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.6rem;
+  font-weight:400;
+  color:#272522;
+}
+
+.jude-title span {
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.65rem;
+  color:#8a796d;
+}
+
+
+.jude-image {
+  position:relative;
+  height:720px;
+  border-radius:40px 300px 40px 300px;
+  overflow:hidden;
+  box-shadow:0 40px 90px rgba(80,60,45,.18);
+}
+
+.jude-image img {
+  object-fit:cover;
+}
+
+
+@media(max-width:900px){
+
+  .jude-story {
+    grid-template-columns:1fr;
+    padding:90px 5vw;
+  }
+
+  .jude-image {
+    height:560px;
+    order:-1;
+  }
+
 }
