@@ -6,28 +6,7 @@ import Hero from "@/components/Hero";
 import GoalFinder from "@/components/GoalFinder";
 import EditorialGLP1 from "@/components/EditorialGLP1";
 import EditorialPeptides from "@/components/EditorialPeptides";
-const services = [
-  {
-    number: "01",
-    title: "GLP-1 Weight Management",
-    text: "A medically guided program designed around your goals, health history and long-term success.",
-  },
-  {
-    number: "02",
-    title: "Peptide Therapy",
-    text: "Personalized peptide strategies focused on recovery, performance, body composition and healthy aging.",
-  },
-  {
-    number: "03",
-    title: "Menopause Support",
-    text: "Thoughtful, individualized care for symptoms that can affect sleep, mood, energy and quality of life.",
-  },
-  {
-    number: "04",
-    title: "TRT & Hormone Optimization",
-    text: "Clinically supervised hormone care created to help qualified patients feel stronger, clearer and more like themselves.",
-  },
-];
+
 
 const steps = [
   ["01", "Connect", "Schedule a private consultation with the HEAL Wellness team."],
@@ -53,39 +32,7 @@ export default function Home() {
  <GoalFinder />
 <EditorialGLP1 />
 <EditorialPeptides />
-      <section className="services" id="treatments">
-        <div className="section-heading">
-          <div>
-            <p className="section-kicker">YOUR TREATMENT, YOUR GOALS</p>
-            <h2>Care that evolves with you.</h2>
-          </div>
-          <p>Every plan begins with a conversation and is shaped around your health history, priorities and medical eligibility.</p>
-        </div>
 
-        <div className="service-grid">
-         {services.map((service) => {
-        
- const link =
-  service.number === "01"
-    ? "/glp1"
-    : service.number === "02"
-      ? "/peptides"
-      : "#contact";
-  return (
-    <Link className="service-card" href={link} key={service.number}>
-      <span className="service-number">{service.number}</span>
-
-      <div>
-        <h3>{service.title}</h3>
-        <p>{service.text}</p>
-      </div>
-
-      <span className="service-arrow">↗</span>
-    </Link>
-  );
-})}
-        </div>
-      </section>
 
       <section className="membership-banner">
         <div className="membership-inner">
