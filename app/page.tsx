@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import IntroSplash from "@/components/IntroSplash";
+import SiteHeader from "@/components/SiteHeader";
+import Hero from "@/components/Hero";
+import GoalFinder from "@/components/GoalFinder";
+import EditorialGLP1 from "@/components/EditorialGLP1";
+import EditorialPeptides from "@/components/EditorialPeptides";
 const services = [
   {
     number: "01",
@@ -33,61 +39,9 @@ const steps = [
 export default function Home() {
   return (
     <main>
-      <div className="intro" aria-hidden="true">
-        <div className="intro-mark">heal</div>
-      </div>
-
-      <header className="nav-shell">
-        <a href="#top" className="brand" aria-label="HEAL Wellness home">
-          <span className="brand-word">heal</span>
-          <span className="brand-sub">WELLNESS</span>
-        </a>
-        <nav className="nav-links" aria-label="Primary navigation">
-          <a href="#treatments">Treatments</a>
-          <a href="#team">Our Team</a>
-          <a href="#experience">Experience</a>
-        </nav>
-        <a className="nav-cta" href="#contact">Book a Consultation</a>
-      </header>
-
-      <section className="hero" id="top">
-        <div className="orb orb-one" />
-        <div className="orb orb-two" />
-        <div className="hero-copy reveal">
-          <p className="eyebrow">PHYSICIAN-DIRECTED WELLNESS • BATON ROUGE</p>
-          <h1>
-            Feel better.
-            <span>Live beautifully.</span>
-          </h1>
-          <p className="hero-text">
-            Personalized GLP-1 therapy, peptide medicine, menopause support and hormone optimization—delivered with medical guidance and a concierge-level experience.
-          </p>
-          <div className="hero-actions">
-            <a className="primary-button" href="#contact">Begin Your Journey</a>
-            <a className="text-link" href="#treatments">Explore treatments <span>↗</span></a>
-          </div>
-          <div className="welcome-note">
-            <span className="welcome-dot" />
-            You do not need to be a patient of Dr. Raina&apos;s concierge practice to visit HEAL Wellness.
-          </div>
-        </div>
-
-        <div className="hero-portrait-wrap reveal-delay">
-          <div className="portrait-frame portrait-left">
-            <Image src="/images/dr-gunjan-raina.jpeg" alt="Dr. Gunjan Raina" fill priority sizes="(max-width: 900px) 70vw, 26vw" />
-          </div>
-          <div className="portrait-frame portrait-right">
-            <Image src="/images/jude-marino.jpg" alt="Jude Marino" fill priority sizes="(max-width: 900px) 70vw, 26vw" />
-          </div>
-          <div className="portrait-caption">
-            <span>Medical expertise</span>
-            <span className="caption-line" />
-            <span>Personalized guidance</span>
-          </div>
-        </div>
-
-        <div className="scroll-cue">SCROLL TO DISCOVER <span>↓</span></div>
-      </section>
+<IntroSplash />
+<SiteHeader />
+<Hero />
 
       <section className="statement-section">
         <p className="section-kicker">WELCOME TO HEAL</p>
@@ -96,7 +50,9 @@ export default function Home() {
           Inside a trusted concierge medical practice, HEAL Wellness offers a warm and elevated place to pursue weight loss, hormonal balance, recovery and longevity—without requiring concierge membership.
         </p>
       </section>
-
+ <GoalFinder />
+<EditorialGLP1 />
+<EditorialPeptides />
       <section className="services" id="treatments">
         <div className="section-heading">
           <div>
@@ -108,6 +64,7 @@ export default function Home() {
 
         <div className="service-grid">
          {services.map((service) => {
+        
  const link =
   service.number === "01"
     ? "/glp1"
