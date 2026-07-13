@@ -3431,7 +3431,109 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
 
 
 /* Mobile */
+/* =========================================================
+   MOBILE OPTIMIZATION
+========================================================= */
 
+@media (max-width: 768px) {
+
+  /* Editorial sections */
+  .editorial-peptides-main,
+  .editorial-glp1-main,
+  .editorial-menopause-main,
+  .editorial-trt-main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+
+  /* Images */
+  .editorial-peptides-visual,
+  .editorial-glp1-visual,
+  .editorial-menopause-visual,
+  .editorial-trt-visual {
+    width: 100%;
+  }
+
+
+  .peptide-photo-frame,
+  .glp1-photo-frame,
+  .menopause-photo-frame,
+  .trt-photo-frame {
+    height: 420px;
+    width:100%;
+  }
+
+
+  /* Prevent image overlap */
+  .peptide-glass-card,
+  .glp1-glass-card,
+  .menopause-glass-card,
+  .trt-glass-card {
+    position:relative;
+    margin-top:-40px;
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+
+  /* Story sections */
+  .story-section,
+  .dr-raina-story,
+  .jude-story {
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+  }
+
+
+  .story-image {
+    width:100%;
+    height:420px;
+  }
+
+
+  /* Headers */
+  .editorial-peptides-copy h2,
+  .editorial-glp1-copy h2,
+  .editorial-menopause-copy h2,
+  .editorial-trt-copy h2 {
+    font-size:3rem;
+    line-height:1;
+  }
+
+
+  /* Difference cards */
+  .difference-grid {
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+
+  /* Begin journey */
+  .begin-content h2 {
+    font-size:3.2rem;
+  }
+
+
+  .begin-details {
+    gap:25px;
+  }
+
+
+  /* Office section */
+  .office-section {
+    display:flex;
+    flex-direction:column;
+  }
+
+
+  .office-image {
+    height:400px;
+  }
+
+}
 @media(max-width:900px){
 
   .dr-raina-story {
@@ -3831,5 +3933,78 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
  flex-direction:column;
  gap:30px;
 }
+
+}
+/* =========================================================
+   FINAL MOBILE CLEANUP
+========================================================= */
+
+@media (max-width: 650px) {
+
+  /* Fix stacked editorial sections */
+  .editorial-glp1-main,
+  .editorial-peptides-main,
+  .specialist-feature,
+  .signature-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+
+  /* Fix all large image containers */
+  .editorial-glp1-visual,
+  .editorial-peptides-visual,
+  .specialist-image,
+  .hero-portrait-wrap {
+    width: 100%;
+    min-height: 420px;
+  }
+
+
+  /* Prevent floating cards covering images */
+  .editorial-glass-card,
+  .peptide-glass-card,
+  .hero-detail-card {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 90%;
+    margin: -50px auto 0;
+  }
+
+
+  /* Fix story photos */
+  .story-image,
+  .team-image {
+    min-height: 420px;
+    height: 420px;
+  }
+
+
+  /* Fix text spacing */
+  .editorial-glp1-copy,
+  .editorial-peptides-copy,
+  .specialist-copy {
+    padding: 0;
+  }
+
+
+  /* Stop oversized headings */
+  .editorial-glp1 h2,
+  .editorial-peptides h2,
+  .specialist-copy h2 {
+    font-size: clamp(3rem, 14vw, 4.5rem);
+  }
+
+
+  /* Make buttons fit */
+  .primary-button,
+  .light-button,
+  .editorial-outline-button,
+  .peptide-outline-button {
+    width:100%;
+    text-align:center;
+  }
 
 }
