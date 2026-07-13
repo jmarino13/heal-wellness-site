@@ -22,7 +22,7 @@ const benefits = [
 
 export default function EditorialGLP1() {
   return (
-    <section className="editorial-glp1" id="glp1-experience">
+  <section className="editorial-glp1" id="treatments">
       <div className="editorial-light editorial-light-left" />
       <div className="editorial-light editorial-light-right" />
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function DrRainaStory() {
   return (
-    <section className="dr-raina-story">
+   <section className="dr-raina-story" id="story">
 
       <div className="dr-raina-image">
 

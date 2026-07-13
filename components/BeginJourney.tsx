@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BeginJourney() {
   return (
-    <section className="begin-journey">
+    <section className="begin-journey" id="contact">
 
       <div className="begin-background">
         <Image
@@ -49,9 +49,9 @@ export default function BeginJourney() {
 
           <a
             className="secondary-button"
-            href="#contact"
+            href="tel:+15047324325"
           >
-            Contact HEAL Wellness
+            Call HEAL Wellness
           </a>
 
         </div>

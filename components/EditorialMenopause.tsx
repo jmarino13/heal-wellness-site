@@ -58,7 +58,7 @@ export default function EditorialMenopause() {
 
           <Link 
             className="menopause-button"
-            href="/menopause"
+            href="/#contact"
           >
             Explore Menopause Support
             <span>→</span>

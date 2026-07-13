@@ -8,12 +8,12 @@ export default function SiteHeader() {
         <span className="brand-sub">WELLNESS</span>
       </Link>
 
-      <nav className="nav-links" aria-label="Primary navigation">
-        <Link href="/#treatments">Treatments</Link>
-        <Link href="/#Story">Our Story</Link>
-        <Link href="/#experience">Experience</Link>
-        <Link href="/#contact">Contact</Link>
-      </nav>
+     <nav className="nav-links" aria-label="Primary navigation">
+  <Link href="/#goals">Your Goals</Link>
+  <Link href="/#treatments">Treatments</Link>
+  <Link href="/#story">Our Story</Link>
+  <Link href="/#experience">Experience</Link>
+</nav>
 
       <Link className="nav-cta" href="/#contact">
         Book a Consultation

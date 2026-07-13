@@ -90,7 +90,7 @@ export default function EditorialTRT() {
 
           <Link
             className="trt-button"
-            href="/trt"
+            href="/#contact"
           >
             Explore TRT Optimization
             <span>→</span>
