@@ -3,9 +3,10 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "HEAL Wellness | GLP-1, Peptides & Hormone Optimization",
+  title: "HEAL Wellness | Longevity, Peptide & Hormone Optimization",
   description:
-    "Physician-directed GLP-1 therapy, peptide therapy, menopause support, TRT and longevity care at HEAL Wellness.",
+   description:
+"HEAL Wellness provides physician-directed GLP-1 therapy, peptide therapy, hormone optimization and longevity care designed around your personal health goals.",
 };
 
 export default function RootLayout({
