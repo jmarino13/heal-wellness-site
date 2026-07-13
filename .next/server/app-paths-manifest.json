@@ -1,5 +1,4 @@
 {
-  "/glp1/page": "app/glp1/page.js",
-  "/page": "app/page.js",
-  "/peptides/page": "app/peptides/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js"
 }
