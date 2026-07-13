@@ -3094,4 +3094,254 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
 .menopause-benefits p {
   font-size:.8rem;
   color:#695850;
+}/* =========================================================
+   EDITORIAL TRT EXPERIENCE
+========================================================= */
+
+.editorial-trt {
+  position: relative;
+  padding: 125px 5vw 45px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(184, 148, 100, .15),
+      transparent 30%
+    ),
+    linear-gradient(
+      125deg,
+      #181817 0%,
+      #24231f 55%,
+      #312b24 100%
+    );
+  color: #eee8df;
+}
+
+.editorial-trt-main {
+  position: relative;
+  z-index: 2;
+  min-height: 760px;
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 6vw;
+  align-items: center;
+}
+
+.editorial-trt-visual {
+  position: relative;
+  min-height: 700px;
+}
+
+.trt-photo-frame {
+  position: absolute;
+  inset: 0 5% 0 0;
+  overflow: hidden;
+  border-radius: 45px 260px 45px 260px;
+  box-shadow: 0 45px 100px rgba(0,0,0,.45);
+}
+
+.trt-photo-frame img {
+  object-fit: cover;
+  transform: scale(1.04);
+  animation: trtImageBreathe 18s ease-in-out infinite alternate;
+}
+
+.trt-glass-card {
+  position: absolute;
+  right: -2%;
+  bottom: 8%;
+  width: min(360px,55%);
+  padding: 38px;
+  border-radius: 28px;
+  background: rgba(45,42,37,.65);
+  border:1px solid rgba(255,255,255,.15);
+  backdrop-filter: blur(18px);
+  box-shadow:0 30px 80px rgba(0,0,0,.4);
+}
+
+.trt-glass-card p {
+  font-size:.65rem;
+  letter-spacing:.25em;
+  color:#c9aa7d;
+}
+
+.trt-glass-card span {
+  display:block;
+  width:45px;
+  height:1px;
+  background:#c9aa7d;
+  margin:22px 0;
+}
+
+.trt-glass-card h3 {
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:400;
+  font-size:1.8rem;
+  line-height:1.35;
+}
+
+.trt-glass-card em {
+  display:block;
+  color:#d2b487;
+}
+
+.editorial-trt-copy {
+  max-width:650px;
+}
+
+.trt-eyebrow {
+  display:flex;
+  align-items:center;
+  gap:18px;
+  margin-bottom:50px;
+  font-size:.65rem;
+  letter-spacing:.25em;
+  color:#c8b18d;
+}
+
+.trt-eyebrow span {
+  width:50px;
+  height:1px;
+  background:#c8b18d;
+}
+
+.trt-small-title {
+  font-size:.7rem;
+  letter-spacing:.4em;
+  color:#b89a6d;
+}
+
+.editorial-trt h2 {
+  margin:15px 0;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(4rem,7vw,7.5rem);
+  line-height:.9;
+  letter-spacing:-.06em;
+  font-weight:400;
+}
+
+.editorial-trt h2 span,
+.editorial-trt h2 em {
+  display:block;
+}
+
+.editorial-trt h2 span {
+  color:#d0b184;
+}
+
+.editorial-trt h2 em {
+  color:#f1dfc3;
+}
+
+.trt-description {
+  max-width:580px;
+  margin-top:35px;
+  font-size:1.05rem;
+  line-height:1.8;
+  color:#cfc7bc;
+}
+
+.editorial-trt blockquote {
+  margin:38px 0;
+  padding-left:25px;
+  border-left:1px solid #b89561;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.6rem;
+  font-style:italic;
+  color:#dcc39c;
+}
+
+.trt-button {
+  display:inline-flex;
+  align-items:center;
+  gap:35px;
+  min-height:68px;
+  padding:0 35px;
+  border:1px solid rgba(211,180,130,.7);
+  border-radius:999px;
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  font-size:.7rem;
+  color:#e5cfaa;
+  transition:.35s ease;
+}
+
+.trt-button:hover {
+  background:#d3b482;
+  color:#191815;
+}
+
+.trt-benefits {
+  position:relative;
+  z-index:3;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  padding:30px;
+  border-radius:25px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  backdrop-filter:blur(12px);
+}
+
+.trt-benefits article {
+  display:flex;
+  gap:18px;
+  padding:0 22px;
+  border-right:1px solid rgba(255,255,255,.12);
+}
+
+.trt-benefits article:last-child {
+  border:none;
+}
+
+.trt-benefits span {
+  width:50px;
+  height:50px;
+  border:1px solid #c9aa7d;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#d3b482;
+}
+
+.trt-benefits h3 {
+  text-transform:uppercase;
+  font-size:.7rem;
+  letter-spacing:.15em;
+}
+
+.trt-benefits p {
+  font-size:.8rem;
+  color:#bdb5aa;
+}
+
+.trt-glow {
+  position:absolute;
+  border-radius:50%;
+  filter:blur(60px);
+}
+
+.trt-glow-one {
+  width:500px;
+  height:500px;
+  right:-200px;
+  top:-200px;
+  background:rgba(203,166,105,.15);
+}
+
+.trt-glow-two {
+  width:400px;
+  height:400px;
+  left:-200px;
+  bottom:-200px;
+  background:rgba(255,255,255,.05);
+}
+
+@keyframes trtImageBreathe {
+  from {
+    transform:scale(1.04);
+  }
+  to {
+    transform:scale(1.09);
+  }
 }
