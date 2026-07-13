@@ -41,16 +41,38 @@ export default function BeginJourney() {
         <div className="begin-actions">
 
          <button
+  type="button"
   className="primary-button"
- onClick={() =>
-  (window as any).blvd.openBookingWidget({
-    urlParams: {
-      locationId: "74ffcb94-8ba1-4f3f-8707-314bd43e7b63",
-      path: "/cart/menu/Peptide%20Consultation/s_3e58223a-5a2f-4f15-9d91-62996f82f4e8",
-      visitType: "SELF_VISIT",
-    },
-  })
-}
+  onClick={() => {
+    const boulevard = (
+      window as unknown as {
+        blvd?: {
+          openBookingWidget: (options: {
+            urlParams: {
+              locationId: string;
+              path: string;
+              visitType: string;
+            };
+          }) => void;
+        };
+      }
+    ).blvd;
+
+    if (!boulevard) {
+      alert(
+        "Online booking is still loading. Please wait a moment and try again."
+      );
+      return;
+    }
+
+    boulevard.openBookingWidget({
+      urlParams: {
+        locationId: "74ffcb94-8ba1-4f3f-8707-314bd43e7b63",
+        path: "/cart/menu/Peptide%20Consultation/s_3e58223a-5a2f-4f15-9d91-62996f82f4e8",
+        visitType: "SELF_VISIT",
+      },
+    });
+  }}
 >
   Schedule Your Consultation
 </button>
