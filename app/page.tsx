@@ -8,6 +8,7 @@ import EditorialGLP1 from "@/components/EditorialGLP1";
 import EditorialPeptides from "@/components/EditorialPeptides";
 import EditorialMenopause from "@/components/EditorialMenopause";
 import EditorialTRT from "@/components/EditorialTRT";
+import DrRainaStory from "@/components/DrRainaStory";
 
 
 const steps = [
@@ -36,6 +37,7 @@ export default function Home() {
 <EditorialPeptides />
 <EditorialMenopause />
 <EditorialTRT />
+<DrRainaStory />
       <section className="membership-banner">
         <div className="membership-inner">
           <p className="section-kicker">OPEN TO THE COMMUNITY</p>

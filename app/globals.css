@@ -3344,4 +3344,103 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
   to {
     transform:scale(1.09);
   }
+}/* =========================================================
+   DR. RAINA STORY
+========================================================= */
+
+.dr-raina-story {
+  position: relative;
+  padding: 130px 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7vw;
+  align-items: center;
+  background: #f8f4ee;
+  overflow: hidden;
+}
+
+.dr-raina-image {
+  position: relative;
+  height: 720px;
+  border-radius: 300px 40px 300px 40px;
+  overflow: hidden;
+  box-shadow: 0 40px 90px rgba(80,60,45,.15);
+}
+
+.dr-raina-image img {
+  object-fit: cover;
+}
+
+.dr-raina-copy {
+  max-width: 620px;
+}
+
+.dr-raina-copy h2 {
+  margin: 20px 0 35px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(3.5rem, 5vw, 5.8rem);
+  line-height: .95;
+  letter-spacing: -.05em;
+  color: #272522;
+}
+
+.dr-raina-copy h2 span {
+  display: block;
+  color: #a66a4a;
+  font-style: italic;
+}
+
+.dr-raina-copy > p:not(.section-kicker) {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #5f574f;
+  margin-bottom: 22px;
+}
+
+.dr-raina-copy blockquote {
+  margin: 40px 0;
+  padding-left: 28px;
+  border-left: 1px solid #a66a4a;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: #76584a;
+}
+
+.doctor-signature {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-top:35px;
+}
+
+.doctor-signature strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size:1.5rem;
+  font-weight:400;
+}
+
+.doctor-signature span {
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.65rem;
+  color:#8a796d;
+}
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+  .dr-raina-story {
+    grid-template-columns:1fr;
+    padding:90px 5vw;
+  }
+
+  .dr-raina-image {
+    height:550px;
+  }
+
 }
