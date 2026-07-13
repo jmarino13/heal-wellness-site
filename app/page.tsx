@@ -10,6 +10,7 @@ import EditorialMenopause from "@/components/EditorialMenopause";
 import EditorialTRT from "@/components/EditorialTRT";
 import DrRainaStory from "@/components/DrRainaStory";
 import JudeStory from "@/components/JudeStory";
+import HealDifference from "@/components/HealDifference";
 
 
 const steps = [
@@ -40,6 +41,7 @@ export default function Home() {
 <EditorialTRT />
 <DrRainaStory />
 <JudeStory />
+<HealDifference />
       <section className="membership-banner">
         <div className="membership-inner">
           <p className="section-kicker">OPEN TO THE COMMUNITY</p>
