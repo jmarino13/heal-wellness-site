@@ -11,6 +11,7 @@ import EditorialTRT from "@/components/EditorialTRT";
 import DrRainaStory from "@/components/DrRainaStory";
 import JudeStory from "@/components/JudeStory";
 import HealDifference from "@/components/HealDifference";
+import BeginJourney from "@/components/BeginJourney";
 
 
 const steps = [
@@ -42,6 +43,7 @@ export default function Home() {
 <DrRainaStory />
 <JudeStory />
 <HealDifference />
+<BeginJourney />
       <section className="membership-banner">
         <div className="membership-inner">
           <p className="section-kicker">OPEN TO THE COMMUNITY</p>
@@ -84,15 +86,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="final-cta" id="contact">
-        <div className="logo-tile" aria-hidden="true">
-          <Image src="/images/heal-logo.png" alt="" fill sizes="240px" />
-        </div>
-        <p className="section-kicker">YOUR NEXT CHAPTER STARTS HERE</p>
-        <h2>Your healthiest years may still be ahead.</h2>
-        <p>Call HEAL Wellness at <strong>(504) 732-HEAL</strong> to schedule your consultation.</p>
-        <a className="primary-button" href="tel:+15047324325">Call (504) 732-HEAL</a>
-      </section>
+      
 
       <footer>
         <div className="footer-brand">
