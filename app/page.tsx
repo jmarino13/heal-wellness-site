@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import GoalFinder from "@/components/GoalFinder";
 import EditorialGLP1 from "@/components/EditorialGLP1";
 import EditorialPeptides from "@/components/EditorialPeptides";
+import EditorialMenopause from "@/components/EditorialMenopause";
 
 
 const steps = [
@@ -32,7 +33,7 @@ export default function Home() {
  <GoalFinder />
 <EditorialGLP1 />
 <EditorialPeptides />
-
+<EditorialMenopause />
 
       <section className="membership-banner">
         <div className="membership-inner">
