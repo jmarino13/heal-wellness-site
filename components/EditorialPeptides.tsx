@@ -38,7 +38,7 @@ export default function EditorialPeptides() {
         <div className="editorial-peptides-visual">
           <div className="peptide-photo-frame">
             <Image
-              src="/images/jude-marino.jpg"
+              src="/images/Peptide Pic 2.jpg"
               alt="Personalized peptide therapy at HEAL Wellness"
               fill
               sizes="(max-width: 950px) 100vw, 50vw"
