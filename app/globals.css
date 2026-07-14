@@ -4124,8 +4124,8 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
   .glp1-glass-card {
     position: absolute;
     left: 20px;
-    right: 20px;
-    bottom: 0;
+    right: -2px;
+    bottom: -35px;
     width: auto;
     padding: 24px;
     border-radius: 24px;
