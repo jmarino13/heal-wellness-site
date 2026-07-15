@@ -112,17 +112,25 @@ main { overflow: hidden; }
 
 
 .nav-shell {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 20;
+  z-index: 9999;
+
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 2rem;
+
   padding: 1.4rem 4vw;
+
+  background: rgba(239, 230, 219, 0.82);
+  backdrop-filter: blur(12px);
+
   border-bottom: 1px solid rgba(48,40,34,.12);
+
+  transition: all .3s ease;
 }
 .brand, .footer-brand {
   display: inline-flex;
