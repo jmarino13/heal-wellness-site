@@ -2150,7 +2150,7 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
   position: absolute;
   z-index: 3;
   right: -1%;
-  bottom: 7%;
+  bottom: -40px;
   width: min(380px, 56%);
   min-height: 300px;
   padding: 38px 38px 34px;
@@ -2369,13 +2369,15 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
     border-radius: 46% 46% 6% 6% / 24% 24% 6% 6%;
   }
 
-  .editorial-glass-card {
-    right: 8px;
-    bottom: 0;
-    width: 74%;
-    min-height: 220px;
-    padding: 25px;
-  }
+.editorial-glass-card {
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  bottom: -15px;
+  width: auto;
+  margin: 0;
+  padding: 24px 20px;
+}
 
   .editorial-benefits {
     grid-template-columns: 1fr;
@@ -3963,15 +3965,15 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
 
 
   /* Prevent floating cards covering images */
-  .editorial-glass-card,
-  .peptide-glass-card,
-  .hero-detail-card {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    width: 90%;
-    margin: -50px auto 0;
-  }
+ .editorial-glass-card,
+.peptide-glass-card,
+.hero-detail-card {
+  position: absolute;
+  right: 20px;
+  bottom: -35px;
+  width: calc(100% - 40px);
+  margin: 0;
+}
 
 
   /* Fix story photos */

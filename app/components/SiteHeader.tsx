@@ -16,7 +16,7 @@ export default function SiteHeader() {
       </nav>
 
       <Link className="nav-cta" href="/#contact">
-        Book a Consultation
+        Begin Your Journey
       </Link>
     </header>
   );

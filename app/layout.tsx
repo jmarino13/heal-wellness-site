@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "HEAL Wellness | Longevity, Peptide & Hormone Optimization",
   description:
-    "HEAL Wellness provides physician-directed GLP-1 therapy, peptide therapy, hormone optimization and longevity care designed around your personal health goals.",
+    "Physician-directed GLP-1 therapy, peptide therapy, menopause support, TRT and longevity care at HEAL Wellness.",
 };
 
 export default function RootLayout({
@@ -14,7 +15,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+
+        <Script
+          id="boulevard-self-booking"
+          strategy="afterInteractive"
+        >
+          {`
+            (function (a) {
+              var b = {
+                businessId: 'c78bc7ca-353e-41b1-8d4d-e517277e47b6',
+              };
+
+              var c = a.createElement('script');
+              var d = a.querySelector('script');
+
+              c.src = 'https://static.joinboulevard.com/injector.min.js';
+              c.async = true;
+
+              c.onload = function () {
+                blvd.init(b);
+                console.log("Boulevard loaded");
+              };
+
+              d.parentNode.insertBefore(c, d);
+            })(document);
+          `}
+        </Script>
+
+      </body>
     </html>
   );
 }

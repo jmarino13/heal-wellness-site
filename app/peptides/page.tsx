@@ -40,7 +40,7 @@ export default function PeptidesPage() {
         </nav>
 
         <Link className="nav-cta" href="/#contact">
-          Book a Consultation
+          Begin Your Journey
         </Link>
       </header>
 

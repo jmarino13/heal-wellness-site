@@ -74,7 +74,7 @@ export default function BeginJourney() {
     });
   }}
 >
-  Schedule Your Consultation
+ Begin Your Journey
 </button>
 
 
