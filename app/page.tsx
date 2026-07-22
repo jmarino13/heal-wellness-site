@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Script from "next/script";
 import IntroSplash from "@/components/IntroSplash";
 import SiteHeader from "@/components/SiteHeader";
 import Hero from "@/components/Hero";
@@ -69,7 +69,33 @@ export default function Home() {
       {/* Why HEAL */}
 
       <HealDifference />
+<section className="vida-certified-section">
 
+  <p className="section-kicker">
+    TRUSTED & CERTIFIED
+  </p>
+
+  <h2>
+    Proudly Vida Verified Certified
+  </h2>
+
+  <p>
+    HEAL Wellness has earned independent certification through Vida Verified,
+    demonstrating our commitment to clinical excellence, patient safety,
+    and trusted wellness care.
+  </p>
+
+  <div
+    className="vida-verified-badge"
+    data-vv-id="VV3201159763"
+  ></div>
+
+  <Script
+    src="https://api.vidaverified.com/badge.js"
+    strategy="afterInteractive"
+  />
+
+</section>
 
       {/* The Experience */}
 
