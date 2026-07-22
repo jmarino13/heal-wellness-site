@@ -4178,4 +4178,16 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
     transform:scale(.90);
     transform-origin:left center;
 }
+  .hero-certification{
+    margin-top:28px;
+}
+
+.hero-certified-label{
+    display:block;
+    margin-bottom:12px;
+    font-size:.78rem;
+    letter-spacing:.25em;
+    text-transform:uppercase;
+    color:#A67C52;
+}
 }
