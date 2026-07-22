@@ -35,6 +35,10 @@ export default function Hero() {
         </div>
 <div className="hero-certification">
 
+  <small className="hero-certified-label">
+    Proudly Vida Verified Certified
+  </small>
+
   <div
     className="vida-verified-badge"
     data-vv-id="VV3201159763"
