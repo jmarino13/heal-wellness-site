@@ -4168,4 +4168,14 @@ footer .brand-sub { color: rgba(255,255,255,.6); }
     display:flex;
     justify-content:center;
 }
+  .hero-certification{
+    margin-top:30px;
+    display:flex;
+    justify-content:flex-start;
+}
+
+.hero-certification .vida-verified-badge{
+    transform:scale(.90);
+    transform-origin:left center;
+}
 }
