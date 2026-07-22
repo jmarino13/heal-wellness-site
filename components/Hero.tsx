@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 export default function Hero() {
   return (
@@ -32,7 +33,19 @@ export default function Hero() {
             Explore Treatments <span>↗</span>
           </Link>
         </div>
+<div className="hero-certification">
 
+  <div
+    className="vida-verified-badge"
+    data-vv-id="VV3201159763"
+  ></div>
+
+  <Script
+    src="https://api.vidaverified.com/badge.js"
+    strategy="afterInteractive"
+  />
+
+</div>
         <div className="welcome-note">
           <span className="welcome-dot" />
 
